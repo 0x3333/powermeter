@@ -46,7 +46,7 @@
 #define b00101000	0x28
 #define b00101001	0x29
 #define b00101010	0x2A
-#define b00101011	0x2B1
+#define b00101011	0x2B
 #define b00101100	0x2C
 #define b00101101	0x2D
 #define b00101110	0x2E
