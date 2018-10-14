@@ -2,7 +2,7 @@
 
 This project reads multiple PZEM004T readers in the same UART, using Multi-drop TX. It reads all devices constantly and when asked, will send the last reading, synchronously. It uses UART to read the devices and I2C to responde to a master node. I2C Address is `0x33`.
 
-The default implementation is using an Arduino Pro Mini clone(Funduino), the software is using (Simba Framework)[https://github.com/eerimoq/simba/].
+The default implementation is using an Arduino Pro Mini clone(Funduino), the software is using [Simba Framework](https://github.com/eerimoq/simba/).
 
 Folder `pcb` contains the schematics and my PCB version of the reader.
 
