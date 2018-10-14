@@ -1,34 +1,42 @@
 // ------------------------------------------------------------------------
-// Includes:
-#include <avr/interrupt.h>
-#include <util/delay.h>
+#include "simba.h"
 //
 #include "main.h"
-#include "io.h"
-#include "uart.h"
+#include "device.h"
+#include "i2c.h"
 
 // ------------------------------------------------------------------------
-// Main Code:
+static struct pin_driver_t heartbeat_led;
 
+static void pz_setup()
+{
+	sys_start();
+
+	pin_init(&heartbeat_led, &pin_led_dev, PIN_OUTPUT);
+	pin_write(&heartbeat_led, 0);
+}
+
+// Main Thread Entrypoint
 int main()
 {
-	cli();
+	// Setup Hardware
+	pz_setup();
+	pz_device_setup();
+	pz_i2c_setup();
 
-	PIN_MODE(LED0_D, LED0, OUTPUT); // ATmega328 Module
+	// Start Read Devices Thread
+	pz_device_start();
 
-	init_uart();
-
-	// Initial States
-	LED0_OFF();
-
-	sei();
+	// Start I2C Thread
+	pz_i2c_start();
 
 	while (1)
 	{
-		LED0_OFF();
-		_delay_ms(500);
-		LED0_ON();
+		pin_write(&heartbeat_led, 1);
+		thrd_sleep_ms(250);
+		pin_write(&heartbeat_led, 0);
+		thrd_sleep_ms(250);
 	}
 
-	return 0;
+	return (0);
 }
