@@ -31,8 +31,10 @@ void pz_device_start()
 
 static uint8_t crc(uint8_t *data, uint8_t size)
 {
-    uint16_t crc = 0;
+    uint16_t sum = 0;
     for (uint8_t i = 0; i < size; i++)
-        crc += *data++;
-    return (uint8_t)(crc & 0xFF);
+    {
+        sum += *data++;
+    }
+    return (uint8_t)(sum & 0xFF);
 }
