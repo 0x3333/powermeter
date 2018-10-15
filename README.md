@@ -12,3 +12,12 @@ This project support 2 hacks in the PZEM004T:
 2. Remote reset, allows the reader to reset the counter remotely, without user interaction(Reset all simultaneously, not possible to reset individualy).
 
 These hacks, will be documented here later, the PCB includes 3 mini pcbs that will hold the optocouplers need to isolate the high voltage.
+
+## PCB
+
+[Schematic](https://github.com/0x3333/powermeter/raw/master/pcb/schematic.pdf)
+![Schematic](https://raw.githubusercontent.com/0x3333/powermeter/master/github/schematic.png)
+
+[PCB Top](https://github.com/0x3333/powermeter/raw/master/pcb/pcb_top.pdf)
+
+[PCB Bottom](https://github.com/0x3333/powermeter/raw/master/pcb/pcb_bottom.pdf)
