@@ -24,12 +24,8 @@ These hacks, will be documented here later, the PCB includes 3 mini pcbs that wi
 
 [Schematic](https://github.com/0x3333/powermeter/raw/master/pcb/schematic.pdf)
 
-[PCB Top](https://github.com/0x3333/powermeter/raw/master/pcb/pcb_top.pdf)
-
-[PCB Bottom](https://github.com/0x3333/powermeter/raw/master/pcb/pcb_bottom.pdf)
+[PCB](https://github.com/0x3333/powermeter/raw/master/pcb/pcb.pdf)
 
 ![Schematic](https://raw.githubusercontent.com/0x3333/powermeter/master/github/schematic.png)
 
-![PCB Top](https://raw.githubusercontent.com/0x3333/powermeter/master/github/pcb_top.png)
-
-![PCB Bottom](https://raw.githubusercontent.com/0x3333/powermeter/master/github/pcb_bottom.png)
+![PCB](https://raw.githubusercontent.com/0x3333/powermeter/master/github/pcb.png)
