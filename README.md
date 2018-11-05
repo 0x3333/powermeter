@@ -3,7 +3,7 @@
 # Software is still incomplete
 # Looks like I was able to create a sensor in
 # ESPurna firmware to handle 3 PZEM004T devices
-# So this project is _halted_ until it is really needed
+# So this project is _halted_ until it is eventually needed
 
 [Sensor commit in ESPurna](https://github.com/0x3333/espurna/commit/9d440fd216d5b156dd9e168d6f8793874f21e5dd)
 
